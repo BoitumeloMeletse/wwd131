@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd 131</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Rubia M. Francesco">
+  <meta name="author" content="Rubia M. Francesco">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>WDD 131 - Dynamic Web Fundamentals - Rubia M. Francesco</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - <span>Rubia M. Francesco</span></h1>
+    <nav>
+      <ul>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+        <li><a href="#" target="_blank">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card about">
+      <h2>About Me</h2>
+      <p>
+        My name is Rubia and I go by Ruby. I was born in South Africa and live with my family in Madagascar.
+        I am currently working as an administrative legal assistant at a law firm. My children are my world,
+        and I love spending time with them. I love to travel and I love to learn new things.
+      </p>
+      <div class="image-container">
+      <img src="images/Profile.jpeg" alt="My Photo">
+        </div>
+        <br>
+      <h3>Toloria, Madagascar</h3>
+      <hr>
+      <p>
+        Madagascar is the 4th largest island in the world and is located in the Indian Ocean. 
+        It is home to 5% of the world's plant and animal species, of which more than 80% are endemic to Madagascar.
+        The island is best known for its lemurs, baobab trees, and vanilla.
+      </p>
+      <img src="images/southafricanflag.png" alt="Official Flag of Madagascar">
+    </section>
+
+    <section class="card resources">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+        <li><a href="https://placeholder.com" target="_blank">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> 🌸 Boitumelo Hebert Meletse 🌸 South Africa</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
