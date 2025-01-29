@@ -1,12 +1,36 @@
-// Footer Date and Last Modified
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
 
-// Hamburger Menu Toggle
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("navigation");
+//dom elements
+const hamburgerBtn = document.querySelector('.hamburger-btn');
+const navMenu = document.querySelector('nav ul');
+let isMenuOpen = false;
 
-hamburger.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  hamburger.textContent = nav.classList.contains("open") ? "X" : "☰";
+//menu
+function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    navMenu.classList.toggle('show');
+    
+    // updating the appearance of hamburger button
+    if (isMenuOpen) {
+        hamburgerBtn.innerHTML = '×'; // this hanges to x when the menu is open
+        hamburgerBtn.setAttribute('aria-expanded', 'true');
+    } else {
+        hamburgerBtn.innerHTML = '☰'; // this changes back to hamburger icon when the menu is closed
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+    }
+}
+
+//click event listener for hamburger button
+hamburgerBtn.addEventListener('click', toggleMenu);
+
+// closing the menu
+document.addEventListener('click', (event) => {
+    if (isMenuOpen && !event.target.closest('nav') && !event.target.closest('.hamburger-btn')) {
+        toggleMenu();
+    }
 });
+
+// current year for the footer
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+// last modified date for footer as wel
+document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;

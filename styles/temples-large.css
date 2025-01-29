@@ -1,11 +1,15 @@
-/* Larger screen styles */
-@media only screen and (min-width: 32rem) {
+
+@media screen and (min-width: 768px) {
+  /* Changing header navigation */
   nav ul {
-    display: flex;
-    gap: 1rem;
+      flex-direction: row;  /* changing to horizontal layout */
+      justify-content: center;
+      gap: 2rem;
   }
 
-  .gallery {
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+  /* changing the grid layout */
+  .temple-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      /* the columns automatically adjust considering the viewport width */
   }
 }

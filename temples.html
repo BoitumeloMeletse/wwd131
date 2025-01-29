@@ -1,55 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Boitumelo H. Meletse">
-    <meta name="author" content="Boitumelo H. Meletse">
-      <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>WDD 131 - Dynamic Web Fundamentals - Boitumelo H. Meletse</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css">
-  <!-- JavaScript -->
-  <script src="scripts/temples.js" defer></script>
+    <meta name="description" content="WDD 131 - Temple Picture Album - Prosper Zvidzai - A picture album website showcasing the pictures of ten temples.">
+    <meta name="author" content="Prosper Zvidzai">
+    <title>WDD 131 -Temple Picture Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <h1>Temple Album</h1>
-    <button id="hamburger" aria-label="Toggle menu">☰</button>
-    <nav id="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h2>Featured Temples</h2>
-    <hr>
-    <section class="gallery">
-      <figure>
-        <img src="images/johannesburgTemple.jpg" alt="Temple 1">
-        <figcaption>Temple 1</figcaption>
-      </figure>
-      <!-- Repeat for other 8 images -->
-      <figure>
-        <img src="images/johannesburgTemple.jpg" alt="Temple 2">
-        <figcaption>Temple 2</figcaption>
-      </figure>
-    </section>
-  </main>
+    <main>
+        <h2>Home</h2>
+        <div class="temple-grid">
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Herod Temple">
+                <figcaption>Herod Temple</figcaption>
+            </figure>
+        </div>
+    </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> 🌸 Boitumelo Hebert Meletse 🌸 South Africa</p>
-    <p>Last Updated: <span id="lastModified"></span></p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Boitumelo Hebert Meletse - South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
