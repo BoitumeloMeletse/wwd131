@@ -1,7 +1,7 @@
 
 :root {
     --primary-green: #009B4F;
-    --primary-yellow: #fffb00;  
+    --primary-yellow: #000000;  
     --primary-red: #CF2027;  
     --primary-black: #000000;  
     --background-light: #F5F5F5;
@@ -9,8 +9,7 @@
 }
 
 body {
-    
-    font-family: 'Georgia', serif, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--background-light);
@@ -86,7 +85,7 @@ dd {
 
 footer {
     background-color: var(--primary-green);
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
     padding: 1em;
     margin-top: 2em;

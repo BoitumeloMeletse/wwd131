@@ -1,0 +1,35 @@
+/* styles.css */
+
+:root {
+    --primary-color: #ffcc00; /* Example color */
+    --secondary-color: #003366; /* Example color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#weather {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 1.5em;
+    }
+}
