@@ -20,6 +20,9 @@ function updateWindChill() {
     }
 }
 
+document.querySelector("footer p").innerHTML = "🌺 Boitumelo Hebert Meletse 🌺 South Africa";
+
+
 // For the date on the footer
 function setCurrentYear() {
     const currentYear = new Date().getFullYear();

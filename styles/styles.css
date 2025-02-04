@@ -95,3 +95,13 @@ footer {
 footer p {
     margin: 0.5em 0;
 }
+
+footer p::before,
+footer p::after {
+    content: "🌺";
+    margin: 0 5px;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+}
