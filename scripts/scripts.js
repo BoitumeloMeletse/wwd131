@@ -22,7 +22,6 @@ function updateWindChill() {
 
 
 
-
 // For the date on the footer
 function setCurrentYear() {
     const currentYear = new Date().getFullYear();

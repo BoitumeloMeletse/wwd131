@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
-
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +6,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Georgia', serif, Arial, sans-serif;  
     line-height: 1.6;
 }
 
@@ -23,26 +21,6 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 1rem;
-}
-
-
-
-
-
-
-/* Hamburger button styles */
-.hamburger-btn {
-    display: none;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    z-index: 100;
 }
 
 nav ul {
@@ -67,49 +45,7 @@ nav a:hover {
     border-radius: 4px;
 }
 
-
-
-
-
-
-
-
-
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-    .hamburger-btn {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #4a148c;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* main elements */
+/* Main styles */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -128,31 +64,24 @@ h2 {
     gap: 1.5rem;
 }
 
-figure {
+.temple-card {
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 8px;
     overflow: hidden;
 }
 
-figure img {
+.temple-card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-figcaption {
+.temple-card figcaption {
     padding: 1rem;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
-
-
-
-
-
-/*footer styles*/
 footer {
     background-color: #4a148c;
     color: white;
