@@ -1,0 +1,60 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+}
+
+button {
+    background-color: #ffa726;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: #f4f4f4;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #002d20;
+}
+
+.dark-mode button {
+    background-color: #ff8f00;
+}
