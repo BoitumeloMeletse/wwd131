@@ -57,6 +57,7 @@ section h2 {
     border-bottom: 2px solid var(--primary-yellow);
     padding-bottom: 0.5em;
     margin-top: 0;
+    text-align: center;
 }
 
 dl {
@@ -69,11 +70,13 @@ dl {
 dt {
     font-weight: bold;
     color: var(--primary-black);
+    text-align: left;
 }
 
 dd {
     margin: 0;
     color: var(--text-dark);
+    text-align: right;
 }
 
 .weather-icon-mobile {
@@ -85,12 +88,8 @@ dd {
 
 footer {
     background-color: var(--primary-green);
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
 }
 
 footer p {
-    margin: 0.5em 0;
+    color: white;
 }

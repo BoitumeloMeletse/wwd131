@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 - South africa - My Country">
@@ -11,69 +10,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>WWD 131 - South Africa</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/styleslarge.css" media="screen and (min-width: 800px)">
+    <script src="scripts/script2.js" defer></script>
     <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <main>
+    <header>
         <h1>South Africa</h1>
-        <div class="hero">
-            <picture>
-                <source media="(min-width: 800px)" srcset="images/South Africa.jpg">
-                <img src="images/Johannesburg-Skyline.jpg" alt="Hero image description" width="1200" height="800">
-            </picture>
+    </header>
+    
+    <div class="accent-bar"></div>
+
+    <main>
+        <div class="background-container">
+            <img src="images/Johannesburg-Skyline.jpg" alt="South African landscape" class="background-image">
+            
+            <div class="panels-container">
+                <div class="panel data-panel">
+                    <h2>Data</h2>
+                    <div class="data-grid">
+                        <div class="data-row">
+                            <span class="label">Area:</span>
+                            <span class="value">1,221,037 sq km</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Population:</span>
+                            <span class="value">60,604,976</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Capital:</span>
+                            <span class="value">Pretoria</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Languages:</span>
+                            <span class="value">11 Official Languages</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Currency:</span>
+                            <span class="value">South African Rand</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Time Zone:</span>
+                            <span class="value">UTC+2</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Calling Code:</span>
+                            <span class="value">+27</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Internet TLD:</span>
+                            <span class="value">.za</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel weather-panel">
+                    <h2>Weather ⛅</h2>
+                    <div class="data-grid">
+                        <div class="data-row">
+                            <span class="label">Temperature:</span>
+                            <span class="value">22 °C</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Conditions:</span>
+                            <span class="value">Partly Cloudy</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Wind:</span>
+                            <span class="value">15 km/h</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="label">Wind Chill:</span>
+                            <span class="value">20 °C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <section class="data-content">
-            <h2>Data</h2>
-            <dl>
-                <dt>Area:</dt>
-                <dd>1,221,037 km²</dd>
-                <dt>Population</dt>
-                <dd>60.14 million</dd>
-                <dt>Capital:</dt>
-                <dd>Pretoria (Executive), Bloemfontein (Judicial), Cape Town (Legislative)</dd>
-                <dt>Languages:</dt>
-                <dd>English, Afrikaans, Zulu, and 8 others</dd>
-                <dt>Currency:</dt>
-                <dd>South African Rand (ZAR)</dd>
-                <dt>Time Zone:</dt>
-                <dd>SAST (UTC+2)</dd>
-                <dt>Calling Code:</dt>
-                <dd>+27</dd>
-                <dt>Internet TLD:</dt>
-                <dd>.za</dd>
-                <dt>Independence:</dt>
-                <dd>May 31, 1910</dd>
-                <dt>Best known for:</dt>
-                <dd>Varied Topography, Great Natural Beauty, and Cultural Diversity</dd>
-                <dt>famous for:</dt>
-                <dd>Skill in sports, including rugby, cricket, golf and soccer</dd>
-
-            </dl>
-        </section>
-
-        <section class="weather-content">
-            <h2>Weather</h2>
-            <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather icon" class="weather-icon-mobile">
-            <dl>
-                <dt>Temperature:</dt>
-                <dd id="temperature">75°F</dd>
-                <dt>Condition:</dt>
-                <dd>Partly Cloudy</dd>
-                <dt>Humidity:</dt>
-                <dd>65%</dd>
-                <dt>Wind:</dt>
-                <dd id="windspeed">5 mph</dd>
-                <dt>Wind Chill:</dt>
-                <dd id="windchill">Calculating...</dd>
-            </dl>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🌺 Boitumelo Hebert Meletse 🌺 South Africa</p>
-        <p id="lastModified"></p>
+        <p>©2024 🌺 Boitumelo Hebert Meletse🌺 South Africa</p>
+        <p id="lastModified">Last Modification: Loading...</p>
     </footer>
+
+    <script src="scripts/script2.js"></script>
 </body>
 </html>

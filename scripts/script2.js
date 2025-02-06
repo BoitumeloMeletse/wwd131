@@ -1,10 +1,28 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const temperature = 10; // Celsius
-  const windSpeed = 5; // km/h
+// Update the last modified date
+document.addEventListener('DOMContentLoaded', function() {
+  const now = new Date();
+  const formattedDate = now.toLocaleString();
+  document.getElementById('lastModified').textContent = `Last Modified: ${formattedDate}`;
+});
 
-  // Calculate wind chill using the formula
-  const windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+// Fetch and display weather data (Optional)
+async function fetchWeather() {
+  try {
+    const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Pretoria,za&units=metric&appid=YOUR_API_KEY');
+    if (!response.ok) {
+      throw new Error('Weather data not available');
+    }
+    const data = await response.json();
+    document.getElementById('weather').textContent = `Weather: ${data.weather[0].description}, ${data.main.temp}°C`;
+  } catch (error) {
+    console.error('Error fetching weather data:', error);
+  }
+}
 
-  // Display the calculated wind chill
-  document.getElementById("wind-chill").textContent = `${windChill.toFixed(1)}°C`;
+// Set dynamic background image
+document.addEventListener('DOMContentLoaded', function() {
+  const backgroundImage = document.querySelector('.background-image');
+  if (backgroundImage) {
+    backgroundImage.style.backgroundImage = 'url("images/Johannesburg-Skyline.jpg")';
+  }
 });
